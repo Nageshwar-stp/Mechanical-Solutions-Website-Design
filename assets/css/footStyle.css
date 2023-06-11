@@ -1,0 +1,110 @@
+.contact-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(230,155,0);
+    padding: 50px 0px;
+    font-family: 'Nunito Sans';
+}
+.contact-banner-text{
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    padding: 0px 40px;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    font-family: 'Nunito Sans';
+}
+.footer-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0px;
+}
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.container-header{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+.container a{
+    text-decoration: none;
+    color: rgb(180,180,180);
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+.upper{
+    margin-bottom: 60px;
+}
+.container-header-sp{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+.container-text{
+    font-size: 15px;
+    color: rgb(180,180,180);
+}
+.copyrights-wrapper{
+    padding: 50px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyrights-wrapper p{
+    margin: 0px 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.copyrights-wrapper a{
+    text-decoration: none;
+    color: rgb(0,180,255);
+    font-weight: 600;
+}
+.brand{
+    font-weight: 500;
+    color: white;
+}
+@media (max-width:1000px) {
+    .footer-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .container{
+        width: 100%;
+    }
+    .upper{
+        margin-top: 30px;
+    }
+}
+@media (max-width:700px) {
+    .footer-wrapper{
+        width: 90%;
+    }
+    .container{
+        margin-bottom: 20px;
+    }
+    .copyrights-wrapper{
+        flex-direction: column;
+    }
+    .copyrights-wrapper span{
+        display: none;
+    }
+    .copyrights-wrapper p{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .contact-banner-text{
+        font-size: 20px;
+    }
+}

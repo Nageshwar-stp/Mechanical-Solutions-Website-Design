@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    background: rgb(30,30,30);
+    color: rgb(200,200,200);
+}
+
+/* ------------------------ */
+.brochure-section{
+    width: 100%;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+}
+.brochure-header{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.brochure-wrapper{
+    width: 80%;
+    margin: auto;
+}
+.brochure-form-wrapper{
+    flex: 1;
+    background: rgb(40,40,40);
+    padding: 40px;
+    margin-right: 10px;
+    width: 100%;
+}
+.brochure-form{
+    display: flex;
+    flex-direction: column;
+}
+.brochure-form label{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+.brochure-form input, .brochure-form textarea{
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+    border-radius: 5px;
+}
+.brochure-form textarea{
+    height: 140px;
+}
+.brochure-form button{
+    background: rgb(230, 115, 0);
+    border: none;
+    padding: 10px 10px;
+    width: 100px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:850px) {
+    .brochure-wrapper{
+        flex-direction: column;
+    }
+    .brochure-form-wrapper, .brochure-info-wrapper{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:400px) {
+    .brochure-wrapper{
+        width: 90%;
+    }
+    .brochure-form-wrapper{
+        padding: 20px;
+    }
+
+}

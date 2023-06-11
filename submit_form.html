@@ -1,0 +1,35 @@
+
+<?php
+
+if(isset($_POST['contact-button']))
+{
+$fullname = $_POST['fullname'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$dateTime = date("d-m-y h:i:s");
+
+$data = 'Fullname : '.$fullname."\n".'Email : '.$email."\n".'Message : '.$message."\n".'Date Time : '.$dateTime."\n----------------------\n\n";
+
+$fp = fopen('data.txt', 'a');
+fwrite($fp, "CONTACT APPLICATION ------------ \n");
+fwrite($fp, $data);
+fclose($fp);
+header('location: contact_success.php');
+}
+
+if(isset($_POST['join-button']))
+{
+$fullname = $_POST['fullname'];
+$email = $_POST['email'];
+$skills = $_POST['skills'];
+$dateTime = date("d-m-y h:i:s");
+
+$data = 'Fullname : '.$fullname."\n".'Email : '.$email."\n".'Skills : '.$skills."\n".'Date Time : '.$dateTime."\n----------------------\n\n";
+
+$fp = fopen('data.txt', 'a');
+fwrite($fp, "JOIN APPLICATION ------------ \n");
+fwrite($fp, $data);
+fclose($fp);
+header('location: contact_success.php');
+}
+?>

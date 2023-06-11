@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- google-fonts-------------------->
+<link rel="icon" href="./assets/icons/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- google-fonts-------------------->
+
+<!-- font-awesome---------------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- font-awesome---------------->
+
+
+    <!-- stylesheets------------------->
+    <link rel="stylesheet" href="./assets/css/contactStyle.css">
+
+    <style>
+        body{
+            background: rgb(25,25,25);
+            color: white;
+        }
+        main{
+            /* width: 100%; */
+            font-family: 'Nunito Sans';
+            min-height: 70vh;
+        }
+        .success-container{
+            width: 60%;
+            margin: auto;
+            text-align: center;
+            background: rgb(35,35,35);
+            padding: 60px 20px;
+            padding-bottom: 120px;
+            margin-top: 50px;
+            border-radius: 10px;
+            /* box-shadow: 0px 2px 10px rgba(0,180,255,0.5); */
+            border: 1px solid rgb(0,180,255);
+            animation: animator 0.4s ease-in-out;
+        }
+        @keyframes animator {
+            0%{
+                transform: scale(0.6);
+            }
+            100%{
+                transform: scale(1.0);
+            }
+        }
+        .success-container h1{
+            font-size: 30px;
+            color: rgb(0,180,255);
+        }
+        .success-container p{
+            margin-bottom: 40px;
+        }
+        .success-container a{
+            text-decoration: none;
+            background: rgb(0,180,255);
+            color: black;
+            padding: 8px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: 0.2s ease-in-out;
+        }
+        .success-container a:hover{
+            background: rgb(0,120,200);
+            color: white;
+            box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+        }
+        @media (max-width:500px) {
+            .success-container{
+                width: 94%;
+            }
+            .success-container h1{
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .success-container a{
+                padding: 8px 80px;
+            }
+        }
+    </style>
+    <!-- stylesheets------------------->
+
+
+    <title>Application Submitted | LatheX</title>
+
+  </head>
+  <body>
+      <link rel="stylesheet" href="./assets/css/navStyle.css">
+<!--
+<section class="top-bar">
+    <div class="top-bar-container">
+        <div class="social-icons-wrapper">
+            <a href="#" class="social-icon"> <i class="fa fa-twitter"></i> </a>
+            <a href="#" class="social-icon"> <i class="fa fa-facebook"></i> </a>
+            <a href="#" class="social-icon"> <i class="fa fa-linkedin"></i> </a>
+            <a href="#" class="social-icon"> <i class="fa fa-instagram"></i> </a>
+        </div>
+        <div class="contact-wrapper">
+            <a href="#" class="contact-items"> <i class="fa fa-phone"></i> <span>+91 990 9211 234</span> </a>
+            <a href="#" class="contact-items"> <i class="fa fa-envelope"></i> <span>supportlathex@gmail.com</span>  </a>
+        </div>
+    </div>
+</section> -->
+<nav class="nav-bar">
+    <div class="nav-container">
+        <div class="logo-wrapper">
+            <a href="index.html">
+                <h1 class="nav-logo" id="nav-logo">Lathex <span id="hidden-logo">Mechanical Solutions</span> </h1>
+            </a>
+        </div>
+        <div class="menu-wrapper" id="menu-wrapper">
+            <ul class="menu">
+                <li> <a href="index.html" class="menu-item">HOME</a> </li>
+                <li> <a href="company.html" class="menu-item">COMPANY</a> </li>
+
+                <li class="dropdown">
+                    <a class="menu-item dropbtn">REQUEST <i class="fa fa-angle-down"></i> </a>
+                    <div class="dropdown-content">
+                        <a href="request_brochure.html">Brochure</a>
+                        <a href="join_us.html">Join us</a>
+                    </div>
+                </li>
+
+                <li> <a href="services.html" class="menu-item">SERVICES</a> </li>
+                <li> <a href="contact.html" class="menu-item">CONTACT</a> </li>
+            </ul>
+        </div>
+        <div class="mobile-menu-hamburger" id="mobile-menu-hamburger">
+            <a id="open-bars" onclick="showMobile()"> <i class="fa fa-bars"></i> </a>
+            <a id="close-button" onclick="hideMobile()"> <i class="fa fa-close"></i> </a>
+        </div>
+    </div>
+</nav>
+
+
+<div class="mobile-menu-wrapper" id="mobile-menu-wrapper">
+    <ul class="mobile-menu">
+        <li> <a href="index.html" class="mobile-menu-item">HOME</a> </li>
+        <li> <a href="company.html" class="mobile-menu-item">COMPANY</a> </li>
+
+        <li class="dropdown">
+            <a class="menu-menu-item dropbtn">REQUEST <i class="fa fa-angle-down"></i> </a>
+            <div class="dropdown-content">
+                <a href="request_brochure.html">Brochure</a>
+                <a href="join_us.html">Join us</a>
+            </div>
+        </li>
+
+        <li> <a href="services.html" class="mobile-menu-item">SERVICES</a> </li>
+        <li> <a href="contact" class="mobile-menu-item">CONTACT</a> </li>
+    </ul>
+    <p class="powerd-text">Designed by <span>STPDNP</span> </p>
+</div>
+<script src="../assets/js/main.js" charset="utf-8"></script>
+
+
+
+
+  <main>
+
+      <section class="success-container">
+          <h1>Your Application Submitted Successfully!</h1>
+          <p>We will respond to you, as soon as possible.</p>
+          <a href="index.html">Back to Home</a>
+      </section>
+
+  </main>
+<link rel="stylesheet" href="./assets/css/footStyle.css">
+<section class="contact-banner">
+    <a href="#" class="contact-banner-text">
+        Contact us for quotations
+    </a>
+</section>
+<footer>
+    <div class="footer-wrapper">
+        <div class="container">
+            <p class="container-header">Productions</p>
+            <a href="index.html">Lathex</a>
+            <a href="http://stpdnp.atwebpages.com">STPDNP</a>
+            <a href="http://kobrathevs.atwebpages.com">Kobra</a>
+            <a href="https://starps.pythonanywhere.com">Starps</a>
+            <a >Debate Arena</a>
+            <a href="http://programminghike.atwebpages.com">Programming Hike</a>
+        </div>
+        <div class="container">
+            <p class="container-header">Navigations</p>
+            <a href="index.html">Home</a>
+            <a href="company.html">About</a>
+            <a href="join_us.html">Join Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="request_brochure.html">Request Brochure</a>
+
+        </div>
+        <!-- <div class="container">
+            <p class="container-header">Quick Menu</p>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Approach</a>
+            <a href="#">Sustainability</a>
+            <a href="#">News</a>
+            <a href="#">Careers</a>
+        </div> -->
+
+        <div class="container">
+            <div class="semi-container upper">
+                <p class="container-header-sp ">Europe</p>
+                <p class="container-text">London - 2398</p>
+                <p class="container-text">10 Japson Street</p>
+            </div>
+
+            <div class="semi-container">
+                <p class="container-header-sp">USA</p>
+                <p class="container-text">New York - 2398</p>
+                <p class="container-text">10 Hadson Carl Street</p>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="semi-container upper">
+                <p class="container-text">Tel. + (123) 3240-345-9348</p>
+                <p class="container-text">Mail. europe@youdomain.com</p>
+            </div>
+
+            <div class="semi-container">
+                <p class="container-text">Tel. + (123) 3240-345-9348</p>
+                <p class="container-text">Mail. usa@youdomain.com</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="copyrights-wrapper">
+        <p>Copyright © <i class="brand">Lathex Mechanical Solutions</i> </p>
+        <span>|</span>
+        <p> Designed by <a href="http://stpdnp.atwebpages.com">STP Development & Production</a> </p>
+    </div>
+</footer>
+
+  <script src="./assets/js/main.js" charset="utf-8"></script>
+
+ </body>
+</html>

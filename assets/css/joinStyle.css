@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    background: rgb(30,30,30);
+    color: rgb(200,200,200);
+}
+
+/* ------------------------ */
+.join-section{
+    width: 100%;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+}
+.join-header{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.join-wrapper{
+    width: 80%;
+    margin: auto;
+}
+.join-form-wrapper{
+    flex: 1;
+    background: rgb(40,40,40);
+    padding: 40px;
+    margin-right: 10px;
+    width: 100%;
+}
+.join-form{
+    display: flex;
+    flex-direction: column;
+}
+.join-form label{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+.join-form input, .join-form textarea{
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+    border-radius: 5px;
+}
+.join-form textarea{
+    height: 140px;
+}
+.join-form button{
+    background: rgb(230, 115, 0);
+    border: none;
+    padding: 10px 10px;
+    width: 100px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width:850px) {
+    .join-wrapper{
+        flex-direction: column;
+    }
+    .join-form-wrapper, .join-info-wrapper{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:400px) {
+    .join-wrapper{
+        width: 90%;
+    }
+    .join-form-wrapper{
+        padding: 20px;
+    }
+
+}

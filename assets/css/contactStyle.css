@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    background: rgb(20,20,20);
+    color: rgb(200,200,200);
+}
+
+/* cover-section----------------------------- */
+
+.cover-section{
+    width: 100%;
+    min-height: 90vh;
+    background: url('/assets/images/company_cover_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /* background-attachment: fixed; */
+}
+.cover-content-wrapper{
+}
+.cover-text-tagline{
+    font-size: 18px;
+    color: rgb(180,180,180);
+}
+.cover-text{
+    font-size: 80px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.cover-text span{
+    font-weight: 800;
+}
+@media (max-width:800px) {
+    .cover-content-wrapper{
+        padding-left: 30px;
+    }
+}
+@media (max-width:660px) {
+    .cover-section{
+        min-height: 90vh;
+    }
+    .cover-text{
+        font-size: 40px;
+    }
+
+}
+
+
+/* contact-section------------------------------- */
+.contact-section{
+    width: 100%;
+    padding: 100px 0px;
+}
+.contact-wrapper{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-form-wrapper{
+    flex: 1;
+    background: rgb(35,35,35);
+    padding: 40px;
+    margin-right: 10px;
+    width: 60%;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+}
+.contact-form input, .contact-form textarea{
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-family: 'Nunito Sans';
+    border-radius: 5px;
+}
+.contact-form textarea{
+    height: 140px;
+}
+.contact-form button{
+    background: rgb(230, 115, 0);
+    border: none;
+    padding: 10px 10px;
+    width: 100px;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-info-wrapper{
+    flex: 1;
+    margin-left: 20px;
+}
+.contact-info{
+    background: rgb(35,35,35);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.contact-info-header, .more-info-header{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+.contact-address, .contact-phone{
+    margin-bottom: 20px;
+}
+.more-info-wrapper{
+    background: rgb(35,35,35);
+    padding: 20px;
+}
+
+
+@media (max-width:850px) {
+    .contact-wrapper{
+        flex-direction: column;
+    }
+    .contact-form-wrapper, .contact-info-wrapper{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:400px) {
+    .contact-wrapper{
+        width: 90%;
+    }
+    .contact-form-wrapper{
+        padding: 20px;
+    }
+
+}
