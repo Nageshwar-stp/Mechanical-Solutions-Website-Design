@@ -18,7 +18,7 @@ body{
 .cover-section{
     width: 100%;
     min-height: 90vh;
-    background: url('/assets/images/company_cover_bg.jpg');
+    background: url(../images/company_cover_bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
